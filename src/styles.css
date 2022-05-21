@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 
 :root {
-    --borderRadius: 16px;
+    --color-white: #fafafafa;
 }
 
 html {
@@ -16,7 +16,7 @@ body {
     background-image: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
 
-body > div:first-of-type {
+#container {
     max-width: 1366px;
     margin: 0 auto;
     padding: 32px;
@@ -24,7 +24,7 @@ body > div:first-of-type {
 
 header {
     border: 2px solid hsl(217, 16%, 45%);
-    border-radius: var(--borderRadius);
+    border-radius: 16px;
 }
 
 header > div {
@@ -35,14 +35,14 @@ header > div {
 }
 
 h1 {
-    color: #fafafa;
+    color: var(--color-white);
     text-transform: uppercase;
-    line-height: 1;
-    margin: 0;
+    line-height: 0.9;
+    margin: 8px;
 }
 
 #scorebox {
-    background-color: white;
+    background-color: var(--color-white);
     border-radius: 8px;
     align-self: stretch;
     padding: 0 48px;
@@ -58,10 +58,69 @@ h1 {
     font-weight: 600;
     color: hsl(229, 64%, 46%);
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #score {
     font-size:60px;
     font-weight: 700;
     color: hsl(229, 25%, 31%);
+}
+
+main {
+    margin: 60px auto;
+    background: url("img/bg-triangle.svg") no-repeat center center;
+    height: 420px;
+    width: 420px;
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.btn_userChoice {
+    height: 172px;
+    width: 172px;
+    border-radius: 172px;
+    border-width: 24px;
+    border-style: solid;
+}
+
+#rock {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: var(--color-white) url("img/icon-rock.svg") no-repeat center center;
+    border-color: hsl(349, 71%, 52%);
+}
+
+#paper {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: var(--color-white) url("img/icon-paper.svg") no-repeat center center;
+    border-color: hsl(230, 89%, 62%);
+}
+
+#scissors {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: var(--color-white) url("img/icon-scissors.svg") no-repeat center center;
+    border-color: hsl(39, 89%, 49%);
+}
+
+#viewRules {
+    display: block;
+    margin-left: auto;
+    border-radius: 8px;
+    border: 1px solid var(--color-white);
+    text-transform: uppercase;
+    padding: 8px 32px;
+    background: transparent;
+    color: var(--color-white);
+    letter-spacing: 4px;
+    font-weight: 700;
 }

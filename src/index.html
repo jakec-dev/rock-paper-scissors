@@ -9,14 +9,10 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div>
+    <div id="container">
         <header>
             <div>
-                <h1>
-                    Rock<br />
-                    Paper<br />
-                    Scissors
-                </h1>
+                <h1>Rock<br />Paper<br />Scissors</h1>
                 <div id="scorebox">
                     <p>Score</p>
                     <p id="score">0</p>
@@ -24,9 +20,13 @@
             </div>
         </header>
 
-        <!-- main -->
+        <main>
+            <button id="rock" class="btn_userChoice"></button>
+            <button id="paper" class="btn_userChoice"></button>
+            <button id="scissors" class="btn_userChoice"></button>
+        </main>
 
-        <!-- rules button -->
+        <button id="viewRules">Rules</button>
     </div>
     <script src="script.js"></script>
 </body>

@@ -6,7 +6,6 @@ const el_btn_scissors = document.querySelector("#scissors");
 const el_p_score = document.querySelector("#score");
 
 const buttonElements = [ el_btn_rock, el_btn_paper, el_btn_scissors ];
-
 let score = 0;
 
 // Game outcomes: ${key} beats ${value}
@@ -15,9 +14,9 @@ const beatsTable = {
     paper: "rock",
     scissors: "paper"
 };
+const choices = Object.keys(beatsTable);
 
 function getComputersChoice() {
-    const choices = Object.keys(beatsTable);
     return choices[Math.floor(Math.random() * choices.length)];
 }
 

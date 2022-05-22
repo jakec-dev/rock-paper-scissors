@@ -98,6 +98,10 @@ main {
     border-color: hsl(349, 71%, 52%);
 }
 
+#rock:hover {
+    border-color: hsl(349, 70%, 56%);
+}
+
 #paper {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -107,6 +111,10 @@ main {
     border-color: hsl(230, 89%, 62%);
 }
 
+#paper:hover {
+    border-color: hsl(230, 89%, 65%);
+}
+
 #scissors {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -114,6 +122,10 @@ main {
     grid-row-end: 3;
     background: var(--color-white) url("img/icon-scissors.svg") no-repeat center center;
     border-color: hsl(39, 89%, 49%);
+}
+
+#scissors:hover {
+    border-color: hsl(40, 84%, 53%);
 }
 
 #viewRules {
